@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+.main{
+    background: url(../Img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    
+}
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.content-aft{
+    display: none;
+    z-index: -1;
+}
+.content h1 {
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 54px;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd, 2px 2px 2px rgba(206,89,55,0);
+}
+.content img {
+    height: 350px;
+    z-index: 9;
+}
+.content button{
+    width: 40%;
+    height: 60px;
+    border: none;
+    margin-bottom: 30px;
+    -webkit-border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    border-radius: 0px 40px 0px 40px;
+    color:white;
+    background-color: #378ab4;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.animate__pulse{
+    animation-iteration-count: infinite;
+
+}
+.animate__slideInRight{
+    transition:all 1ms linear;
+
+}
+.todo{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.mamad {
+    display: none;
+}
+form{
+    padding:10px;
+}
+form input{
+    background-color: #378ab4;
+    border: none;
+    height: 40px;
+    width: 70%;
+    border-radius: 40px;
+    padding: 20px;
+}
+form button{
+    height: 40px;
+    width: 20%;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: #A1D8FF;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.do{
+    background: rgba(199, 227,225, 0.7);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+    overflow-y: scroll;
+    width: 80%;
+}
+
+.close img {
+    height: 24px;
+    position: relative;
+    top: 0;
+    left: 0px;
+    cursor: pointer;
+}
+.close{
+    display: grid;
+    justify-items: end;
+    padding: 10px;
+}
+.do::-webkit-scrollbar{
+    display: none;
+}
+.listli {
+    color: white;
+    list-style: none;
+    background-color: #5FB8FF;
+    height: 30px;
+    width: 70%;
+    
+    margin: 10px;
+    padding: 5px;
+   
+}
+.listlibutton{
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+background-color: #5FB8FF;
+  
+}
+.listlibuttondlt{
+   
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+   background-color: #5FB8FF;
+}
+.divin{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.divdone{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    opacity: 40%;
+    text-decoration: line-through;
+}
